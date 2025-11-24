@@ -7,7 +7,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Border, Side, Alignment
 from openpyxl.utils.dataframe import dataframe_to_rows
 
-PDF_PATH = r"C:\\Users\\Developer\\Shubham_files\\PDF-OCR\\Payslip.pdf"
+PDF_PATH = r"Payslip.pdf"
 OUTPUT_XLSX = "Payslip_Tables_Structured_C.xlsx"
 
 thin = Side(style="thin")
@@ -66,3 +66,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
