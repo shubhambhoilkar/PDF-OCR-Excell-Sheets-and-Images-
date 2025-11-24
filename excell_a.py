@@ -6,7 +6,7 @@ from openpyxl.styles import Alignment, Border, Side
 import math
 import statistics
 
-PDF_PATH = r"C:\\Users\\Developer\\Shubham_files\\PDF-OCR\\Payslip.pdf"
+PDF_PATH = r"Payslip.pdf"
 OUTPUT_XLSX = "Payslip_Layout_Full_Reconstruction_A.xlsx"
 
 # parameters you can tune
@@ -164,3 +164,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
