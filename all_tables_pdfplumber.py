@@ -4,7 +4,7 @@ from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 
 # Config
-pdf_path = "C:\\Users\\Developer\\Shubham_files\\PDF-OCR\\Payslip.pdf"
+pdf_path = "Payslip.pdf"
 output_excel = "Payslip_all_tables.xlsx"
 
 # Step 1: Extract all tables
@@ -38,5 +38,6 @@ for table in all_tables:
 
 # Step 3: Save Excell
 wb.save(output_excel)
+
 
 print(f"Excel created successfully: {output_excel}")
