@@ -7,8 +7,8 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 # ================================
 # CONFIG
 # ================================
-pdf_path = "C:\\Users\\Developer\\Shubham_files\\PDF-OCR\\Payslip.pdf"
-output_excel = "C:\\Users\\Developer\\Shubham_files\\Pdf_OCR\\payslip_output\\Payslip_all_tables_borders.xlsx"
+pdf_path = "Payslip.pdf"
+output_excel = "Payslip_all_tables_borders.xlsx"
 
 
 # ================================
@@ -72,3 +72,4 @@ for table in all_tables:
 wb.save(output_excel)
 
 print(f"Excel created successfully: {output_excel}")
+
