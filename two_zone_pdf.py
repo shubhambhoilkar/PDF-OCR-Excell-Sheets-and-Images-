@@ -5,8 +5,8 @@ from openpyxl import Workbook
 from openpyxl.styles import Border, Side, Alignment
 from openpyxl.utils import get_column_letter
 
-PDF_PATH = r"C:\\Users\\Developer\\Shubham_files\\PDF-OCR\\Payslip_Prakash.pdf"
-OUTPUT_XLSX = "C:\\Users\\Developer\\Shubham_files\\Pdf_OCR\\structured-output\\new1_Payslip_Prakash.xlsx"
+PDF_PATH = r"Payslip_Prakash.pdf"
+OUTPUT_XLSX = "structured-output\\new1_Payslip_Prakash.xlsx"
 
 # Config:
 RIGHT_ZONE_START_COL = 16   # Excel column index where the right zone begins (1-based)
@@ -93,3 +93,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
