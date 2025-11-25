@@ -10,8 +10,8 @@ from openpyxl.styles import Border, Side, Alignment
 from openpyxl.utils import get_column_letter
 import math
 
-PDF_PATH = r"C:\\Users\\Developer\\Shubham_files\\PDF-OCR\\Payslip_Prakash.pdf"
-OUTPUT_XLSX = "C:\\Users\\Developer\\Shubham_files\\Pdf_OCR\\structured-output\\new3_Payslip_Prakash.xlsx"
+PDF_PATH = r"Payslip_Prakash.pdf"
+OUTPUT_XLSX = "structured-output\\new3_Payslip_Prakash.xlsx"
 
 # Config
 ZONE_COUNT = 3                # try 3 vertical zones (left, center, right)
@@ -86,3 +86,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
