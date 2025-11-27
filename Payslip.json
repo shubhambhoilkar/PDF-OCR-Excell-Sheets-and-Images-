@@ -1,0 +1,34 @@
+//Payslip
+Payslip_data = {
+	"UserProfile": {
+		"GeoID":"",
+		"Name":"",
+		"BadgeID":"",
+		"PassportNumber":"",
+		"Position":"",
+		"Project":"",
+		"BankAccount":"",
+		"JoiningDate":"",
+		"OtherLeaves":"",
+		"NonPaidSickLeaves":"",
+		"HalfPaidSickLeaves":"",
+		"AuthorisedAbsents":"",
+	},
+	"TimeSheet":[{
+		"Date-Day":"",
+		"Attendance":"",
+		"FixOT":"",
+		"NormalOT":"",
+		"WeekendOT":"",
+		"HolidayOT":"",
+		"TotalHours":""
+	}],
+	"Payslip":{
+		"GrossSalary":"",
+		"CalculatedSalary":"",
+		"PeriodForm":"",
+		"Additions":"",
+		"Deductions":"",
+		"NetSalary":""		
+	}
+}
