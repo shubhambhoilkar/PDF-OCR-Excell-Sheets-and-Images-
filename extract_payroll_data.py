@@ -118,7 +118,8 @@ def extract_pdf_to_json(pdf_path: str, output_json: str):
 # ---------- Example RUN ----------
 if __name__ == "__main__":
     output = extract_pdf_to_json(
-        "C:\\Users\\Developer\\Shubham_files\\PDF-OCR\\Timesheets_AARTI.pdf",
+        "Timesheets.pdf",
         "extracted_data.json"
         )
     print("JSON created:", output)
+
