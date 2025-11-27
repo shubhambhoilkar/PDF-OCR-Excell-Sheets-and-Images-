@@ -1,0 +1,157 @@
+{
+    "DocumentType": "Payslip",
+    "Data": {
+        "Name": "AARTI AMIT SAWANT\nOther Leaves\nWEEKEND OT OF\nPREVIOUS MONTH",
+        "Passport": "W3173309",
+        "Position": "SECRETARY\nFully Paid Sick Leaves\nFULLY PAID SICK\nLEAVES",
+        "Project": "SAIPEM- SHAH GAS PAYROLL\nHalf Paid Sick Leaves\nHALF PAID SICK\nLEAVES",
+        "JoiningDate": "16-10-2023",
+        "GrossSalary": "16,000.00",
+        "CalculatedSalary": "9,806.45",
+        "NetSalary": "12",
+        "PeriodFrom": "01-10-2025",
+        "PeriodTo": "31-10-2025",
+        "Additions": "6,193.55",
+        "Deductions": "0.00",
+        "AttendanceTable": [
+            {
+                "Date": "1",
+                "Day": "Wed",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "2",
+                "Day": "Thu",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "3",
+                "Day": "Fri",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "4",
+                "Day": "Sat",
+                "Attendance": "5",
+                "Hours": ""
+            },
+            {
+                "Date": "6",
+                "Day": "Mon",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "7",
+                "Day": "Tue",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "8",
+                "Day": "Wed",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "9",
+                "Day": "Thu",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "10",
+                "Day": "Fri",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "11",
+                "Day": "Sat",
+                "Attendance": "",
+                "Hours": ""
+            },
+            {
+                "Date": "12",
+                "Day": "Sun",
+                "Attendance": "13",
+                "Hours": ""
+            },
+            {
+                "Date": "14",
+                "Day": "Tue",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "15",
+                "Day": "Wed",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "16",
+                "Day": "Thu",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "17",
+                "Day": "Fri",
+                "Attendance": "9",
+                "Hours": "9.00"
+            },
+            {
+                "Date": "18",
+                "Day": "Sat",
+                "Attendance": "",
+                "Hours": ""
+            },
+            {
+                "Date": "19",
+                "Day": "Sun",
+                "Attendance": "20",
+                "Hours": ""
+            },
+            {
+                "Date": "21",
+                "Day": "Tue",
+                "Attendance": "22",
+                "Hours": ""
+            },
+            {
+                "Date": "23",
+                "Day": "Thu",
+                "Attendance": "24",
+                "Hours": ""
+            },
+            {
+                "Date": "25",
+                "Day": "Sat",
+                "Attendance": "26",
+                "Hours": ""
+            },
+            {
+                "Date": "27",
+                "Day": "Mon",
+                "Attendance": "28",
+                "Hours": ""
+            },
+            {
+                "Date": "29",
+                "Day": "Wed",
+                "Attendance": "30",
+                "Hours": ""
+            },
+            {
+                "Date": "31",
+                "Day": "Fri",
+                "Attendance": "",
+                "Hours": ""
+            }
+        ]
+    }
+}
