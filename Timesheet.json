@@ -1,0 +1,50 @@
+//TimeSheet
+TimeSheet_data ={
+	"UserProfile":{
+		"Name":"",
+		"Designation":"",
+		"PPT_NO":"",
+		"Badge_No":"",
+		"Project_No":"",
+		"Location":"",
+		"From":"",
+		"To":"",
+		"Date":"",
+		"Department":"",
+		"WeeklyWorkingHours":"",
+		"HiringCompany":"",
+		"CostCenter":"",
+		"WorkLocation":""
+	},
+
+	"TimeSheet": [{
+		"Date":"",
+		"Day":"",
+		"NormalHours":"",
+		"FixedOverTime":"",
+		"CurrentMonthOT":"",
+		"PreviousMonhtOT":"",
+		"TotalHrs":"",
+		"JobNo":[],
+		"PresenceDays":"",
+		"SickLeave":"",
+		"Vacations":"",
+		"MissionDays":"",
+		"MissionInEurpe":"",
+		"MissionOffShore":"",
+		"UnpaidDays":"",
+		"TravelDays":"",
+		"TotalWokringHours":"",
+		"TotalNormalHours":"",
+		"TotalOverTimeWeekdays":"",
+		"EmployeeSignature":{
+			"Name":"",
+			"Designation":"",	
+		},
+		"ProjectApproval":{
+			"Name":"",
+			"Designation":""	
+		}
+	}],
+	"Payslip":{}
+}
