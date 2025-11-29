@@ -1,7 +1,7 @@
-from paddleocr import PaddleOCR
+import json
 import layoutparser as lp
 from PIL import Image
-import json
+from paddleocr import PaddleOCR
 
 # Load OCR models
 ocr_table = PaddleOCR(show_log=False, structure=True)
