@@ -134,3 +134,10 @@ if __name__ == "__main__":
         json.dump(final_output, f, indent=4, ensure_ascii=False)
 
     print("\nDONE. Saved to output.json")
+
+
+# Install Dependencies
+# pip install pdfplumber pdf2image paddleocr pillow layoutparser opencv-python
+# You must also install Detectron2(one-time install)
+# pip install 'git+https://github.com/facebookresearch/detectron2.git'
+#Thats It
