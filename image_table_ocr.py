@@ -13,9 +13,8 @@ table_detector = lp.Detectron2LayoutModel(
 )
 
 def extract_key_value_pairs(table_data):
-    """
-    Convert PaddleOCR PP-Structure result into key-value pairs from image.
-    """
+    # Convert PaddleOCR PP-Structure result into key-value pairs from image.
+    
     final_tables = []
 
     for entry in table_data:
