@@ -5,7 +5,6 @@ from paddleocr import PaddleOCR
 
 # Load OCR models
 ocr_table = PaddleOCR(show_log=False, structure=True)
-
 table_detector = lp.Detectron2LayoutModel(
     "lp://TableBank/faster_rcnn_R_50_FPN",
     extra_config={"MODEL.ROI_HEADS.SCORE_THRESH_TEST": 0.5},
@@ -14,13 +13,10 @@ table_detector = lp.Detectron2LayoutModel(
 
 def extract_key_value_pairs(table_data):
     # Convert PaddleOCR PP-Structure result into key-value pairs from image.
-    
     final_tables = []
-
     for entry in table_data:
         if "html" not in entry:
             continue
-
         from bs4 import BeautifulSoup
         soup = BeautifulSoup(entry["html"], "html.parser")
 
