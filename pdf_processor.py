@@ -1,3 +1,12 @@
+# Input: PDF
+
+# Output:
+# Detects text / image
+# Detects table vs plain text inside image
+# Extracts table
+# Converts to key–value pairs
+# 👉 Works on Python 3.12.
+
 import pdfplumber
 from pdf2image import convert_from_path
 from paddleocr import PaddleOCR
