@@ -19,7 +19,6 @@ def extract_key_value_pairs(table_data):
             continue
         from bs4 import BeautifulSoup
         soup = BeautifulSoup(entry["html"], "html.parser")
-
         rows = []
         for tr in soup.find_all("tr"):
             cols = [td.get_text(strip=True) for td in tr.find_all(["td", "th"])]
@@ -28,7 +27,6 @@ def extract_key_value_pairs(table_data):
 
         if not rows:
             continue
-
         header = rows[0]
         kv_list = [
             dict(zip(header, row))
@@ -37,7 +35,6 @@ def extract_key_value_pairs(table_data):
         final_tables.append(kv_list)
 
     return final_tables
-
 
 def extract_table_from_image(img_path):
     img = Image.open(img_path).convert("RGB")
@@ -59,7 +56,6 @@ def extract_table_from_image(img_path):
         "raw_ocr": result,
         "key_value_pairs": kv
     }
-
 
 if __name__ == "__main__":
     img_path = "table_image.jpg"
