@@ -106,4 +106,5 @@ for path in paths:
     result2 = payslip_extractor.extract(ps_path)
     combined = {**result1, **result2}
     save_to_excel(combined, f"{dir_path}/generated_report.xlsx")
-    
+    db.insert_record(result1, resukt, path, ps_path)
+    print(f"Data Stored in MongoDB for: {path}")
