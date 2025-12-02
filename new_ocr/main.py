@@ -87,10 +87,6 @@ def save_to_excel(merged_dict, excel_path="merged_output.xlsx"):
 
     return excel_path
 
-# dir_path = r"/home/janmeet/PythonProject/ocr/2025/saipem/Oct"
-# timesheets = r"/home/janmeet/PythonProject/ocr/2025/saipem/Oct/timesheet"
-# payslips = r"/home/janmeet/PythonProject/ocr/2025/saipem/Oct/payslip"
-
 dir_path = r"output"
 timesheets = r"timesheets"
 payslips = r"payslip"
@@ -105,6 +101,9 @@ for path in paths:
     result1= timesheet_extractor.extract(path)
     result2 = payslip_extractor.extract(ps_path)
     combined = {**result1, **result2}
+    # Save to Excel (existing)
     save_to_excel(combined, f"{dir_path}/generated_report.xlsx")
-    db.insert_record(result1, resukt, path, ps_path)
+
+    # Save to MongoDB (new)
+    db.insert_record(result1, result2, path, ps_path)
     print(f"Data Stored in MongoDB for: {path}")
