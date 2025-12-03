@@ -39,5 +39,8 @@ timesheet_data = df_timesheet.to_dict(orient="records")
 
 if payslip_data:
     payslip_collection.insert_many(payslip_data)
+    print("Data inserted into Payslip_Data.")
+
 if timesheet_data:
     timesheet_collection.insert_many(timesheet_data)
+    print("Data inserted into Timesheet_Data.")
