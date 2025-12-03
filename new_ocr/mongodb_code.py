@@ -4,7 +4,7 @@ from pymongo import MongoClient
 # 1. Load Excel
 file_path = "C:\\Users\\Developer\\Shubham_files\\ocr\\output.xlsx"
 df= pd.read_excel(file_path)
-print(df.to_string())
+
 #Additional FIX
 df.columns = df.columns.map(str)
 
@@ -30,8 +30,8 @@ df_timesheet = df_timesheet.where(pd.notnull(df_timesheet), None)
 client = MongoClient("mongodb://localhost:27017")
 db = client["OCR_Database"]
 
-payslip_collection = db["Payslip_data"]
-timesheet_collection = db["Timesheet_data"]
+payslip_collection = db["Payslip_Data"]
+timesheet_collection = db["Timesheet_Data"]
 
 # 6 . Insert into MongoDB:
 payslip_data = df_payslip.to_dict(orient="records")
