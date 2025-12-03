@@ -2,6 +2,8 @@ import os
 import re
 import fitz
 import pandas as pd
+import ocr_db
+# from ocr_db import MongoDB
 from ocr_extractor1 import OCRExtractor1
 from payslip_extractor import PaySlipExtractor
 
@@ -98,12 +100,15 @@ payslip_extractor = PaySlipExtractor()
 
 for path in paths:
     ps_path = find_corresponding_payslip(path, payslips)
+
     result1= timesheet_extractor.extract(path)
     result2 = payslip_extractor.extract(ps_path)
+
     combined = {**result1, **result2}
-    # Save to Excel (existing)
+    # Save to Excel (exiting)
     save_to_excel(combined, f"{dir_path}/generated_report.xlsx")
 
     # Save to MongoDB (new)
-    db.insert_record(result1, result2, path, ps_path)
-    print(f"Data Stored in MongoDB for: {path}")
+    ocr_db.insert_record(result1, result2, path, ps_path)
+    print(f"Data stored in MongoDB for: {path}")
+    
