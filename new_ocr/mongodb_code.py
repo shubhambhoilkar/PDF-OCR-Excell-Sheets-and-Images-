@@ -2,7 +2,7 @@ import pandas as pd
 from pymongo import MongoClient
 
 # 1. Load Excel
-file_path = "C:\\Users\\Developer\\Shubham_files\\ocr\\output.xlsx"
+file_path = "output.xlsx"
 df= pd.read_excel(file_path)
 
 #Additional FIX
