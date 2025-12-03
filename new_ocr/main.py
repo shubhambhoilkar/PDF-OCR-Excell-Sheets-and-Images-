@@ -98,17 +98,20 @@ paths = list_image_pdfs(timesheets)
 timesheet_extractor = OCRExtractor1()
 payslip_extractor = PaySlipExtractor()
 
-for path in paths:
-    ps_path = find_corresponding_payslip(path, payslips)
+try:
+    for path in paths:
+        ps_path = find_corresponding_payslip(path, payslips)
 
-    result1= timesheet_extractor.extract(path)
-    result2 = payslip_extractor.extract(ps_path)
+        result1= timesheet_extractor.extract(path)
+        result2 = payslip_extractor.extract(ps_path)
 
-    combined = {**result1, **result2}
-    # Save to Excel (exiting)
-    save_to_excel(combined, f"{dir_path}/generated_report.xlsx")
+        combined = {**result1, **result2}
+        # Save to Excel (exiting)
+        save_to_excel(combined, f"{dir_path}/generated_report.xlsx")
 
-    # Save to MongoDB (new)
-    ocr_db.insert_record(result1, result2, path, ps_path)
-    print(f"Data stored in MongoDB for: {path}")
-    
+        # Save to MongoDB (new)
+        ocr_db.insert_record(result1, result2, path, ps_path)
+        print(f"Data stored in MongoDB for: {path}")
+
+except Exception as e:
+    print("Error while execution: ", e)
